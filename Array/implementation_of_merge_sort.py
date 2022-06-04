@@ -15,6 +15,7 @@ def mergesort(arr):
         mergesort(R) #recursive call
         #move from bottom to top by applyling merge procedure
         i=j=k=0
+        print(L)
         while (i<len(L) and j<len(R)):
             if L[i]<R[j]:
                 arr[k]=L[i]
