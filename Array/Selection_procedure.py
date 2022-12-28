@@ -5,7 +5,6 @@ def partition(arr,p,q):
     for j in range(p+1,q+1):
         if arr[j]<x:
             i=i+1
-            temp=arr[i]
             #swapping the value
             arr[i],arr[j]=arr[j],arr[i]
     #swaping with the pivot value
@@ -30,5 +29,5 @@ def selection_procedure(arr,p,q,k):
 
 
 arr=[50,70,80,30,40,88,19,27,69]
-print(selection_procedure(arr,0,len(arr)-1,1))
+print(selection_procedure(arr,0,len(arr)-1,3))
 

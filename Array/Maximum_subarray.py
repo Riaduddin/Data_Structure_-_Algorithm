@@ -9,8 +9,6 @@ def findMaximumSum(nums):
         mid = len(nums) // 2
         L=nums[:mid]
         R=nums[mid:]
-        # print(L)
-        # print(R)
         # Find maximum sublist sum for the left sublist
         leftMax = -sys.maxsize
         total = 0
@@ -30,9 +28,14 @@ def findMaximumSum(nums):
     
         # Recursively find the maximum sublist sum for the left
         # and right sublist, and take maximum
+        # print(L)
+        # print(R)
+        # print(leftMax)
+        # print(rightMax)
+        
         maxLeftRight = max(findMaximumSum(L),
                         findMaximumSum(R))
-    
+        print(maxLeftRight)
         # return the maximum of the three
         #calculating the summation of top tree(leftMax+rightMax) to compare them to bottom tree branch
         return max(maxLeftRight, leftMax + rightMax)
@@ -41,8 +44,8 @@ def findMaximumSum(nums):
 nums = [2, -4, 1, 9, -6, 7, -3]
 #nums=[-2,1,-3,4,-1,2,1,-5,4]
 #nums=[5,4,-1,7,8]
-nums=[1]
+#nums=[1]
 #nums=[-2,-3,-1]
 print('The Maximum sum of the sublist is', findMaximumSum(nums))
-
- 
+# for i in range(len(nums)-1,-1,-1):
+#     print(nums[i])

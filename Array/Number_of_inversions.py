@@ -1,5 +1,3 @@
-def count_inversions(arr):
-    return mergesort(arr)
 def mergesort(arr):
     count=0
     if len(arr)>1:
@@ -33,5 +31,7 @@ def mergesort(arr):
 arr=[50,20,40,90,88,11,13]
 arr2=[50,84,56,32,97,95,61,5]
 arr3=[70,50,60,10,20,30,80,15]
-print(count_inversions(arr3))
+#print(count_inversions(arr3))
+print(mergesort(arr2))
+#print(arr2)
 

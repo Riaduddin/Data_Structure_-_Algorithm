@@ -27,6 +27,7 @@ def dac_max_min(arr,low,high):
 
         return (max_value,min_value)
 
+
 arr=[50,90,20,10,15,75,6,95,-6]
 low=0
 high=len(arr)-1

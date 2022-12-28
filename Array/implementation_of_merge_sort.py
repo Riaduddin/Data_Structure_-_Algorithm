@@ -1,6 +1,7 @@
 
 def mergesort(arr):
     #moving top to bottom in a Recursive Tree
+    print(arr)
     if len(arr)>1:
         #finding the mid of the array
         mid=len(arr)//2
@@ -15,7 +16,8 @@ def mergesort(arr):
         mergesort(R) #recursive call
         #move from bottom to top by applyling merge procedure
         i=j=k=0
-        print(L)
+        # print(L)
+        # print(R)
         while (i<len(L) and j<len(R)):
             if L[i]<R[j]:
                 arr[k]=L[i]
@@ -34,8 +36,10 @@ def mergesort(arr):
             arr[k]=R[j]
             j+=1
             k+=1
+        #print(arr)
 
-arr=[50,20,40,90,88,11,13]
+#arr=[50,20,40,90,88,11,13]
+arr=[10,20,30,40,11,21,31,41]
 print(arr)
 mergesort(arr)
 print(arr)
